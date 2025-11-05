@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57b0f83bb03b4f940920488c30a59c17, type: 3}
+  m_Name: UnitySceneState
+  m_EditorClassIdentifier: 
+  _inexScene: {fileID: 102900000, guid: f6ca84eedfc578f419df42f4061af52b, type: 3}
+  _indexSceneName: Index

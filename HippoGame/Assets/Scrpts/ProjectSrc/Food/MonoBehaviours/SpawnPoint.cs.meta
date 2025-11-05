@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 2083c1fe026d0df4ca80045f2cef4a69
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _foodItemrefab: {instanceID: 0}
+  - _foodTransformHolderBankObj: {fileID: 11400000, guid: 7ef3a5848c223ef428cfe82d0bed03ae, type: 2}
+  - _foodActiveObjBankObj: {fileID: 11400000, guid: cdf12f7e958886d4393fa17e9dced43d, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
