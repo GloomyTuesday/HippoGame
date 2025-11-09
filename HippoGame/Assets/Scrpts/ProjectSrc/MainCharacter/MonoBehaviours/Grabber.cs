@@ -34,6 +34,7 @@ namespace Scripts.ProjectSrc.MainCharacter
 
                     _isGrabbableKinematic = _grabbedRigidbody.isKinematic;
                     _grabbedRigidbody.isKinematic = true;
+
                     _targetBankObj.IsFoodGrabbed = true;
                 }
 
@@ -175,6 +176,7 @@ namespace Scripts.ProjectSrc.MainCharacter
             GrabbedRigidbody.AddForce(_raycastSource.forward * _throwForce, ForceMode.Impulse);
 
             var eatable = GrabbedRigidbody.GetComponent<IEatable>();
+            eatable.Charge(); 
             _targetBankObj.ThrowFood(eatable);
 
             GrabbedRigidbody = null;

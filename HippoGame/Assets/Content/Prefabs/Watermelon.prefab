@@ -50,6 +50,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _particlePrefab: {fileID: 858401238073588331, guid: c0728e0b6bbe6f74e8d5dd5598487f7f, type: 3}
   _foodActiveObjBankObj: {fileID: 11400000, guid: cdf12f7e958886d4393fa17e9dced43d, type: 2}
+  _hippoColiderBankObj: {fileID: 11400000, guid: 23055b8a7df15194486997a1207911e4, type: 2}
+  _rigidbody: {fileID: 1573308187482030911}
 --- !u!33 &1455828933401132241
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -134,7 +136,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2940902827526154702}
   serializedVersion: 4
-  m_Mass: 8
+  m_Mass: 7
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}

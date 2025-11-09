@@ -58,8 +58,6 @@ namespace Scripts.ProjectSrc.Food
         {
             Subscribe();
 
-            Debug.Log("\t Holder count: "+ FoodTransformHolderBank.ItemHashSet.Count+"\t food items count: "+ FoodActiveObjBank.ItemHashSet.Count);
-
             if (FoodTransformHolderBank.ItemHashSet.Count < 1) return;
             if (FoodActiveObjBank.ItemHashSet.Count >= _maxFoodObj) return;
 

@@ -10,8 +10,32 @@ namespace Scripts.ProjectSrc.MainCharacter
         public event Action<IEatable> OnThrowFood;
         public void ThrowFood(IEatable eatable) => OnThrowFood?.Invoke(eatable);
 
-        public Transform TargetTransform { get; set; }
-        public bool IsFoodGrabbed { get; set; }
+        [SerializeField]
+        private string _targetObjname;
+
+        private Transform _targetTransform;
+        public Transform TargetTransform
+        {
+            get => _targetTransform;
+            set
+            {
+                _targetTransform = value; 
+
+                if (value!=null)
+                    _targetObjname = value.name;
+            }
+        }
+
+        [SerializeField]
+        private bool _foodGrabbed;
+        public bool IsFoodGrabbed
+        {
+            get => _foodGrabbed;
+            set
+            {
+                _foodGrabbed = value;
+            }
+        }
 
     }
 }

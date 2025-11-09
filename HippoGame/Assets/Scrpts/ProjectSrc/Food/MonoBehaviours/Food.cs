@@ -14,20 +14,30 @@ namespace Scripts.ProjectSrc.Food
         [FilterByType(typeof(IBankTypeId<int, Transform>))]
         private Object _foodActiveObjBankObj;
 
+        [SerializeField]
+        [FilterByType(typeof(IBankTypeId<int, Collider>))]
+        private Object _hippoColiderBankObj;
+
+        private Rigidbody _rigidbody;
+
         private IBankTypeId<int, Transform> _foodActiveObjBank;
         private IBankTypeId<int, Transform> FoodActiveObjBank => _foodActiveObjBank;
 
+        private IBankTypeId<int, Collider> _hippoColliderBank;
+        private IBankTypeId<int, Collider> HippoColliderBank => _hippoColliderBank;
+
         private int _instanceId;
 
-        private Rigidbody _rigidbody; 
         public Rigidbody Rigidbody { get=> _rigidbody; private set => _rigidbody = value; }
 
+        private bool _charge;
 
         private void Awake()
         {
             _rigidbody = GetComponent<Rigidbody>();
             _instanceId = transform.GetInstanceID();
             _foodActiveObjBank = _foodActiveObjBankObj.GetComponent<IBankTypeId<int, Transform>>();
+            _hippoColliderBank = _hippoColiderBankObj.GetComponent<IBankTypeId<int, Collider>>(); 
         }
 
         private void OnEnable()
@@ -40,9 +50,14 @@ namespace Scripts.ProjectSrc.Food
             FoodActiveObjBank.RemoveItem(_instanceId); 
         }
 
+        public void Charge() => _charge = true;
+
         private void OnCollisionEnter(Collision collision)
         {
-            
+            if (!_charge) return;
+            if (HippoColliderBank.KeysHashSet.Contains(collision.collider.GetInstanceID())) return;
+
+            Destroy(); 
         }
 
         public void Destroy()
