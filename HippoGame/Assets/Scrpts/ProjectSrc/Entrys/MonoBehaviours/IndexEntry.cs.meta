@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: c88b8ba0bb5c74e4e93dcad55f2704c2
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _unityScene: {instanceID: 0}
+  - _unitySceneState: {fileID: 11400000, guid: d1973043e56d3a94f878939f94138524, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

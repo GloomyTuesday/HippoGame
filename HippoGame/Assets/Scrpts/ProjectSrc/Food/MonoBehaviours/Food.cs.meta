@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 0983bb27c5973354b996d5906d1bd9ae
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _foodActiveObjBankObj: {fileID: 11400000, guid: cdf12f7e958886d4393fa17e9dced43d, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
